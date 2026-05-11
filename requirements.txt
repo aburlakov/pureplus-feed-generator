@@ -1,1 +1,17 @@
+# HTTP fetch на оригиналния product feed
+httpx>=0.27.0
 
+# XML parsing (бърз и толерантен)
+lxml>=5.2.0
+
+# Jinja2 за HTML темплейт rendering
+Jinja2>=3.1.0
+
+# Playwright — headless Chromium за HTML→PNG render
+playwright>=1.45.0
+
+# Pillow — image post-processing (JPG conversion, optimization)
+Pillow>=10.4.0
+
+# PyYAML — четене на settings.yaml и manual_overrides.yaml
+PyYAML>=6.0.0
