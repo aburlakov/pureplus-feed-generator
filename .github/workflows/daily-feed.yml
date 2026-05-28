@@ -1,0 +1,53 @@
+# ═══════════════════════════════════════════════════════════
+# daily-feed.yml — Дневна автоматична генерация на feed-а
+# ═══════════════════════════════════════════════════════════
+name: Daily Feed Generation
+
+on:
+  # Cron schedule — всеки ден в 01:00 UTC (= 03:00 българско лятно време)
+  schedule:
+    - cron: '0 1 * * *'
+  # Позволява и ръчно пускане от GitHub UI (бутон "Run workflow")
+  workflow_dispatch:
+
+jobs:
+  generate-feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20   # предпазен лимит, ако нещо забие
+
+    steps:
+      # 1. Сваля repo-то на сървъра
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Инсталира Python 3.11
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 3. Инсталира Python библиотеките от requirements.txt
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      # 4. Инсталира Chromium + системните библиотеки за Playwright
+      - name: Install Playwright Chromium
+        run: playwright install --with-deps chromium
+
+      # 5. Пуска целия pipeline (fetch → render → build feed)
+      - name: Run feed generator
+        run: python -m src.main
+
+      # 6. Commit-ва и push-ва новите файлове, ако има промени
+      - name: Commit and push changes
+        run: |
+          git config user.name "feed-bot"
+          git config user.email "feed-bot@users.noreplace.github.com"
+          git add docs/
+          # Commit само ако наистина има промени (иначе git хвърля грешка)
+          if git diff --staged --quiet; then
+            echo "Няма промени — feed-ът е същият."
+          else
+            git commit -m "Auto-update feed $(date +'%Y-%m-%d %H:%M')"
+            git push
+          fi
