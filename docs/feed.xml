@@ -9,18 +9,29 @@
     <link>https://pureplus.bg</link>
     <description>WooCommerce Product Feed PRO - This product feed is created with the Product Feed PRO for WooCommerce plugin from AdTribes.io. For all your support questions check out our FAQ on https://www.adtribes.io or e-mail to: support@adtribes.io </description>
     <item>
+      <g:id>5526</g:id>
+      <g:title>Филтрираща душ слушалка /хром/ + подарък сешоар</g:title>
+      <g:description>Стилен и удобна филтрираща душ слушалка. Специално създаден, за да премахва хлор, утайки и други замърсители, тя подобрява качеството на водата още от първата употреба. Подходящ за всеки дом, този компактен аксесоар се монтира лесно и веднага започва да работи във Ваша полза.Насладете се на по-здрава кожа, коса и истинско усещане за свежест под душа.ПОДАРЪК: Сешоар Philips BHD308/10</g:description>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>49.90</g:price>
+      <g:link>https://pureplus.bg/produkt/ash1516ch-10-promo/?utm_source=meta&amp;utm_campaign=product_feed&amp;utm_medium=cpc&amp;utm_term=adtribes</g:link>
+      <g:image_link>https://aburlakov.github.io/pureplus-feed-generator/images/5526.jpg</g:image_link>
+      <product_type>Home &gt; Решения за баня</product_type>
+      <identifier_exists>no</identifier_exists>
+    <g:additional_image_link>https://pureplus.bg/wp-content/uploads/2026/08/photo_2026-08-28-11.48.45.jpeg</g:additional_image_link></item>
+    <item>
       <g:id>5501</g:id>
-      <g:title>Филтрираща душ слушалка /чернa/ + подарък сешоар ПРОМО</g:title>
+      <g:title>Филтрираща душ слушалка /чернa/ + подарък сешоар</g:title>
       <g:description>Стилна и удобна филтрираща душ слушалка. Специално създадна, за да премахва хлор, утайки и други замърсители, тя подобрява качеството на водата още от първата употреба. Подходящ за всеки дом, този компактен аксесоар се монтира лесно и веднага започва да работи във Ваша полза.Насладете се на по-здрава кожа, коса и истинско усещане за свежест под душа.ПОДАРЪК: Сешоар Philips BHD308/10</g:description>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
-      <g:price>51.12</g:price>
+      <g:price>49.90</g:price>
       <g:link>https://pureplus.bg/produkt/ash1516bk-10-promo/?utm_source=meta&amp;utm_campaign=product_feed&amp;utm_medium=cpc&amp;utm_term=adtribes</g:link>
       <g:image_link>https://aburlakov.github.io/pureplus-feed-generator/images/5501.jpg</g:image_link>
       <product_type>Home &gt; Решения за баня</product_type>
-      <g:sale_price>43.00</g:sale_price>
       <identifier_exists>no</identifier_exists>
-    <g:additional_image_link>https://pureplus.bg/wp-content/uploads/2025/12/ASH1516BK-1-v1-20250205-scaled-1.png</g:additional_image_link></item>
+    <g:additional_image_link>https://pureplus.bg/wp-content/uploads/2026/08/2026_08_25_PurePlus.png</g:additional_image_link></item>
     <item>
       <g:id>5118</g:id>
       <g:title>Филтриращ диспенсър за топла и студена вода Philips ADD5981GR/10</g:title>
